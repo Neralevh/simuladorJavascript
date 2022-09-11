@@ -26,14 +26,16 @@ class Producto {
   }
 }
 
-for (let i = 2; i >= 0; i--) {
-  let userPIN = prompt(`Ingrese su clave. Tiene ${i + 1} intentos.`);
-  if (userPIN === savedPIN) {
-    saludar(userName);
-    ingresar = true;
-    break;
-  } else {
-    alert(`Error, te quedan ${i} intentos`);
+function checkUser() {
+  for (let i = 2; i >= 0; i--) {
+    let userPIN = prompt(`Ingrese su clave. Tiene ${i + 1} intentos.`);
+    if (userPIN === savedPIN) {
+      saludar(userName);
+      ingresar = true;
+      break;
+    } else {
+      alert(`Error, te quedan ${i} intentos`);
+    }
   }
 }
 
@@ -102,19 +104,6 @@ if (ingresar) {
       motherboard: "Asus B450",
     },
   ];
-
-  let caja = document.querySelector(".box1");
-
-  for (const piezas of hardware) {
-    let contenedor = document.createElement("div");
-    contenedor.innerHTML = `
-  <h3> Categoria: ${piezas.categoria} </h3>
-  <p> Procesador: ${piezas.procesador}</p>
-  <p> RAM: ${piezas.memoriaRam}</p>
-  <p> Tarjeta Grafica: ${piezas.tarjetaGrafica}</p>
-  <p> Motherboard: ${piezas.motherboard}</p>`;
-    caja.appendChild(contenedor);
-  }
 
   alert(`Usted tiene $${saldo} en su cuenta`);
 
