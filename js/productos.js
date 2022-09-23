@@ -1,28 +1,3 @@
-// CODIGO DEL PROGRAMA ANTERIOR
-// class Producto {
-//   constructor(categoria, nombre, precio) {
-//     this.categoria = categoria;
-//     this.nombre = nombre;
-//     this.precio = parseFloat(precio);
-//   }
-// }
-
-// const producto1 = new Producto("Armados", "CPU Gama Baja", 96999);
-// const producto2 = new Producto("Armados", "CPU Gama Media", 99999);
-// const producto3 = new Producto("Armados", "CPU Gama Alta", 402999);
-// const producto4 = new Producto("Combos", "Combo 1", 44999);
-// const producto5 = new Producto("Combos", "Combo 2", 69999);
-// const producto6 = new Producto("Combos", "Combo 3", 121999);
-
-// const productos = [
-//   producto1,
-//   producto2,
-//   producto3,
-//   producto4,
-//   producto5,
-//   producto6,
-// ];
-
 const hardware = [
   {
     id: 1,
@@ -34,6 +9,7 @@ const hardware = [
     tarjetaGrafica: "RX 550 4Gb",
     motherboard: "No incluye",
     imagen: "./images/armados1.png",
+    cantidad: "1",
   },
   {
     id: 2,
@@ -45,6 +21,7 @@ const hardware = [
     tarjetaGrafica: "RTX 3050 8Gb",
     motherboard: "No incluye",
     imagen: "./images/armados2.png",
+    cantidad: "1",
   },
   {
     id: 3,
@@ -56,6 +33,7 @@ const hardware = [
     tarjetaGrafica: "RTX 3080 12Gb",
     motherboard: "No incluye",
     imagen: "./images/armados3.png",
+    cantidad: "1",
   },
   {
     id: 4,
@@ -67,6 +45,7 @@ const hardware = [
     tarjetaGrafica: "No incluye",
     motherboard: "Asus A320",
     imagen: "./images/combo1.png",
+    cantidad: "1",
   },
   {
     id: 5,
@@ -78,6 +57,7 @@ const hardware = [
     tarjetaGrafica: "No incluye",
     motherboard: "Asus A320",
     imagen: "./images/combo2.png",
+    cantidad: "1",
   },
   {
     id: 6,
@@ -89,5 +69,6 @@ const hardware = [
     tarjetaGrafica: "No incluye",
     motherboard: "Asus B450 + Cooler",
     imagen: "./images/combo3.png",
+    cantidad: "1",
   },
 ];

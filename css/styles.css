@@ -23,9 +23,11 @@ body {
 
 .head2 {
   font-size: 50px;
-  color: #e9eb79;
-  border: #000000 1px;
+  border: #e9eb79 1px solid;
+  color: #000000;
   text-align: center;
+  background-color: #e9eb79;
+  width: 90%;
 }
 
 .head3 {
@@ -64,4 +66,17 @@ body {
 
 .list-group-item {
   background-color: #e3e62c;
+}
+
+.img-centrada {
+  display: block;
+  margin: auto;
+}
+
+.modal-title {
+  color: #000000;
+}
+
+span {
+  color: black;
 }
