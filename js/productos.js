@@ -8,7 +8,7 @@ const hardware = [
     memoriaRam: "8GB",
     tarjetaGrafica: "RX 550 4Gb",
     motherboard: "No incluye",
-    imagen: "./images/armados1.png",
+    imagen: "./public/images/armados1.png",
     cantidad: "1",
   },
   {
@@ -20,7 +20,7 @@ const hardware = [
     memoriaRam: "8GB",
     tarjetaGrafica: "RTX 3050 8Gb",
     motherboard: "No incluye",
-    imagen: "./images/armados2.png",
+    imagen: "./public/images/armados2.png",
     cantidad: "1",
   },
   {
@@ -32,7 +32,7 @@ const hardware = [
     memoriaRam: "16GB (2x8GB)",
     tarjetaGrafica: "RTX 3080 12Gb",
     motherboard: "No incluye",
-    imagen: "./images/armados3.png",
+    imagen: "./public/images/armados3.png",
     cantidad: "1",
   },
   {
@@ -44,7 +44,7 @@ const hardware = [
     memoriaRam: "8Gb DDR4 3200Mhz",
     tarjetaGrafica: "No incluye",
     motherboard: "Asus A320",
-    imagen: "./images/combo1.png",
+    imagen: "./public/images/combo1.png",
     cantidad: "1",
   },
   {
@@ -56,7 +56,7 @@ const hardware = [
     memoriaRam: "8GB (2x4GB)",
     tarjetaGrafica: "No incluye",
     motherboard: "Asus A320",
-    imagen: "./images/combo2.png",
+    imagen: "./public/images/combo2.png",
     cantidad: "1",
   },
   {
@@ -68,7 +68,9 @@ const hardware = [
     memoriaRam: "16Gb (2x8GB) 3200Mhz",
     tarjetaGrafica: "No incluye",
     motherboard: "Asus B450 + Cooler",
-    imagen: "./images/combo3.png",
+    imagen: "./public/images/combo3.png",
     cantidad: "1",
   },
 ];
+
+export { hardware };
