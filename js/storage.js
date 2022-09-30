@@ -1,10 +1,9 @@
 const almacenarCarrito = (carrito) => {
-  localStorage.setItem("carrito", JSON.stringify("carrito"));
+  localStorage.setItem("carrito", JSON.stringify(carrito));
 };
 
 const obtenerCarrito = () => {
-  const carritoStorage = JSON.parse(localStorage.getItem("carrito"));
-  return carritoStorage;
+  return JSON.parse(localStorage.getItem("carrito"));
 };
 
 export { almacenarCarrito, obtenerCarrito };

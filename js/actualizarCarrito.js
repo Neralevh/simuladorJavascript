@@ -1,4 +1,5 @@
 import { carrito } from "./accionesCarrito.js";
+import { almacenarCarrito } from "./storage.js";
 
 function calcularTotal() {
   let total = 0;
@@ -13,6 +14,7 @@ function calcularTotal() {
   const cantidadFinal = carrito.reduce((acc, item) => acc + item.cantidad, 0);
 
   mostrarCantidadesCarrito(cantidadFinal);
+  almacenarCarrito(carrito);
 }
 
 const mostrarCantidadesCarrito = (cantidadFinal) => {

@@ -3,6 +3,10 @@ import { hardware } from "./productos.js";
 
 let carrito = [];
 
+function setCarrito(carrito_) {
+  carrito = carrito_;
+}
+
 function agregarAlCarrito(id) {
   let producto = hardware.find((hardware) => hardware.id === id);
 
@@ -65,4 +69,4 @@ function eliminarProducto(i) {
   calcularTotal();
 }
 
-export { agregarAlCarrito, carrito, plasmarCarrito };
+export { agregarAlCarrito, setCarrito, plasmarCarrito, carrito };
