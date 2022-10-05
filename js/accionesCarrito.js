@@ -12,13 +12,10 @@ function agregarAlCarrito(id) {
 
   let productoEnCarrito = carrito.find((producto) => producto.id === id);
 
-  if (productoEnCarrito) {
-    productoEnCarrito.cantidad++;
-  } else {
-    producto.cantidad = 1;
+  productoEnCarrito
+    ? productoEnCarrito.cantidad++
+    : ((producto.cantidad = 1), carrito.push(producto));
 
-    carrito.push(producto);
-  }
   plasmarCarrito();
   calcularTotal();
 }
@@ -61,9 +58,7 @@ function plasmarCarrito() {
 function eliminarProducto(i) {
   carrito[i].cantidad--;
 
-  if (carrito[i].cantidad === 0) {
-    carrito.splice(i, 1);
-  }
+  carrito[i].cantidad === 0 && carrito.splice(i, 1);
 
   plasmarCarrito();
   calcularTotal();
