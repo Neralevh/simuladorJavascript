@@ -31,7 +31,9 @@ function plasmarProductos() {
                 <li class="list-group-item">Precio: $${hardware.precio}</li>
               </ul>
               <div class="card-body">
-                <button type="button" class="btn btn-dark">Agregar al carrito 🛒</button>
+                <button type="button" class="btn btn-dark" value"${
+                  hardware.id
+                }">Agregar al carrito 🛒</button>
               </div>
             </div>
           </div>
@@ -39,6 +41,12 @@ function plasmarProductos() {
     contenedor.appendChild(div);
 
     div.querySelector("button").addEventListener("click", () => {
+      Swal.fire({
+        icon: "success",
+        title: "Gracias!",
+        text: "Su producto ha sido agregado al carrito",
+        timer: 1500,
+      });
       agregarAlCarrito(hardware.id);
     });
   });

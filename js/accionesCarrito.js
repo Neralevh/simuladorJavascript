@@ -47,8 +47,25 @@ function plasmarCarrito() {
           </div>
   `;
 
-    card.querySelector("button").addEventListener("click", () => {
-      eliminarProducto(index);
+    card.querySelector("button").addEventListener("click", (event) => {
+      event.stopPropagation();
+      if (event.target.classList.contains("btn-danger")) {
+        Swal.fire({
+          title: "Esta seguro?",
+          text: `Va a eleminar el producto`,
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Eliminar",
+          cancelButtonText: "Cancelar",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            eliminarProducto(index);
+            Swal.fire("Eliminado!", "El producto ha sido eliminado", "success");
+          }
+        });
+      }
     });
 
     carritoCards.appendChild(card);
