@@ -1,10 +1,9 @@
-import { agregarAlCarrito } from "./accionesCarrito.js";
-import { hardware } from "./productos.js";
+import { agregarAlCarrito } from "./components/cart/accionesCarrito.js";
 
-function plasmarProductos() {
+function plasmarProductos(productos) {
   const contenedor = document.getElementById("fila");
 
-  hardware.forEach((hardware) => {
+  productos.forEach((hardware) => {
     const div = document.createElement("div");
     div.classList.add("col-md-4");
     div.innerHTML = `

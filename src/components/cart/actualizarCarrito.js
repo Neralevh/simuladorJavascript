@@ -1,5 +1,5 @@
 import { carrito } from "./accionesCarrito.js";
-import { almacenarCarrito } from "./storage.js";
+import { almacenarCarrito } from "../storage/storage.js";
 
 function calcularTotal() {
   let total = 0;

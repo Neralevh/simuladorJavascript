@@ -1,5 +1,5 @@
 import { calcularTotal } from "./actualizarCarrito.js";
-import { hardware } from "./productos.js";
+import { hardware } from "../../data/productos.js";
 
 let carrito = [];
 
