@@ -80,3 +80,14 @@ body {
 span {
   color: black;
 }
+
+.barraBuscadora {
+  height: 45px;
+  font-size: 18px;
+  width: 1000px;
+  margin-right: 600px;
+  background-color: #b9b9b9;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: #fbff00;
+}

@@ -3,6 +3,8 @@ import { agregarAlCarrito } from "./components/cart/accionesCarrito.js";
 function plasmarProductos(productos) {
   const contenedor = document.getElementById("fila");
 
+  contenedor.innerHTML = "";
+
   productos.forEach((hardware) => {
     const div = document.createElement("div");
     div.classList.add("col-md-4");
